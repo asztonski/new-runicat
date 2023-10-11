@@ -9,7 +9,10 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        
+        "roboto": "var(--font-roboto)",
+        "lato": "var(--font-lato)",
+        "raleway": "var(--font-raleway)",
+        "runic": "var(--font-runic)",
       }
     },
   },
