@@ -13,7 +13,11 @@ const config: Config = {
         "lato": "var(--font-lato)",
         "raleway": "var(--font-raleway)",
         "runic": "var(--font-runic)",
-      }
+      },
+      colors: {
+        primary: "var(--color-primary)",
+        grey: "var(--color-grey)",
+      },
     },
   },
   plugins: [],

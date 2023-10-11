@@ -3,7 +3,44 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
+  --color-black: #000;
+  --color-white: #ffffff;
+  --color-grey: #707070;
+  --color-primary: #3bffe1;
+  --fehu: #c90118;
+  --uruz: #650022;
+  --thurisaz: #95481d;
+  --anzus: #f2de00;
+  --raidho: #970097;
+  --kenaz: #f04f00;
+  --gebo: #d912b1;
+  --wunjo: #f6007b;
+  --hagal: #393f3e;
+  --nauthiz: #727272;
+  --isa: #d1d1d1;
+  --jera: #9fda00;
+  --eihwaz: #006cf2;
+  --pertho: #dfcd9f;
+  --algiz: #7b3c26;
+  --sowilo: #d79635;
+  --teiwaz: #d100e4;
+  --berkano: #005c16;
+  --ehwaz: #05ffc2;
+  --mannaz: #aab5b7;
+  --laguz: #96ff00;
+  --ingwaz: #fcc8ff;
+  --dagaz: #fff;
+  --othala: #0017f0;
+}
+
+body {
+  background-color: var(--color-black);
+  color: var(--color-white);
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: var(--font-raleway);
+  text-transform: uppercase;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -13,3 +50,17 @@
     --background-end-rgb: 0, 0, 0;
   }
 }
+
+/* @layer components {
+  .input-primary {
+      @apply relative block w-full appearance-none rounded-md border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500 shadow-sm sm:text-sm focus:ring-opacity-50;
+  }
+
+  .file-input-primary {
+      @apply file:mr-4 file:py-2 file:px-4
+      file:rounded-full file:border-0
+      file:text-sm file:font-semibold
+      file:bg-secondary file:text-white
+      hover:file:bg-primary file:duration-300  my-4 file:cursor-pointer
+  }
+} */

@@ -5,7 +5,7 @@ import localFont from 'next/font/local';
 
 const roboto = Roboto({ subsets: ["latin"], weight: ["300", "500", "700"], variable: '--font-roboto' });
 const lato = Lato({ subsets: ["latin"], weight: ["300", "700", "900"], variable: '--font-lato' });
-const raleway = Raleway({ subsets: ["latin"], weight: ["300", "500", "700"], variable: '--font-raleway' });
+const raleway = Raleway({ subsets: ["latin"], weight: ["800"], variable: '--font-raleway' });
 
 const runic = localFont({
   src: [
