@@ -33,14 +33,21 @@
   --othala: #0017f0;
 }
 
+html, body {
+  height: 100%;
+}
+
 body {
   background-color: var(--color-black);
   color: var(--color-white);
 }
 
-h1,h2,h3,h4,h5,h6 {
+.raleway {
   font-family: var(--font-raleway);
-  text-transform: uppercase;
+}
+
+.roboto {
+  font-family: var(--font-roboto);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -51,8 +58,8 @@ h1,h2,h3,h4,h5,h6 {
   }
 }
 
-/* @layer components {
-  .input-primary {
+@layer components {
+  /* .input-primary {
       @apply relative block w-full appearance-none rounded-md border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500 shadow-sm sm:text-sm focus:ring-opacity-50;
   }
 
@@ -62,5 +69,5 @@ h1,h2,h3,h4,h5,h6 {
       file:text-sm file:font-semibold
       file:bg-secondary file:text-white
       hover:file:bg-primary file:duration-300  my-4 file:cursor-pointer
-  }
-} */
+  } */
+}
