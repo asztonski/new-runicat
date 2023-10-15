@@ -2,6 +2,7 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Roboto, Lato, Raleway } from "next/font/google";
 import localFont from 'next/font/local';
+import AppContextProvider from "@/context/AppContext";
 
 const roboto = Roboto({ subsets: ["latin"], weight: ["900"], variable: '--font-roboto' });
 const lato = Lato({ subsets: ["latin"], weight: ["300", "700", "900"], variable: '--font-lato' });
@@ -36,7 +37,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${roboto.variable} ${lato.variable} ${raleway.variable} ${runic.variable}`}>{children}</body>
+      <AppContextProvider>
+        <body className={`${roboto.variable} ${lato.variable} ${raleway.variable} ${runic.variable}`}>{children}</body>
+      </AppContextProvider>
     </html>
   );
 }

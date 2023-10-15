@@ -5,7 +5,7 @@ export const Footer = () => {
         <span className="desktop">copyrights </span>© 2023
       </p>
       <svg
-        className={"cat absolute bottom-0 left-1/3"}
+        className={"cat absolute bottom-0 left-[31%]"}
         xmlns="http://www.w3.org/2000/svg"
         width="57.828"
         height="47.001"

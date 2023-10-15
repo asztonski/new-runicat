@@ -1,11 +1,12 @@
-import { Header } from "@/components/Header/Header"
-import { Footer } from "@/components/Footer/Footer"
+import { Header } from "@/components/UI/Header/Header"
+import { Main } from "@/components/UI/Main/Main"
+import { Footer } from "@/components/UI/Footer/Footer"
 
 export default function Home() {
   return (
     <div className={"p-10 h-full flex flex-col"}>
       <Header />
-      <main className={"flex-1"}></main>
+      <Main />
       <Footer />
     </div>
   )
