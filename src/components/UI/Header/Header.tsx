@@ -15,13 +15,13 @@ export const Header = () => {
         <a
           href="https://www.instagram.com/runicatofficial/"
           target="_blank"
-          rel="noopener noreferrer"
+          className={"z-10"}
         >
           <InstagramIcon />
         </a>
         <a
           target="_blank"
-          rel="noopener noreferrer"
+          className={"z-10"}
           href="https://www.facebook.com/Runicat"
         >
           <FacebookIcon />

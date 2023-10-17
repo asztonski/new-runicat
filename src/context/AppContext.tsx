@@ -34,9 +34,9 @@ const AppContextProvider: React.FC<{ children: ReactNode }> = ({
   return (
     <AppContext.Provider
       value={{
-        stage: "home",
-        setStage: () => {},
-        mousePosition: { x: 0, y: 0 },
+        stage,
+        setStage,
+        mousePosition,
       }}
     >
       {children}
