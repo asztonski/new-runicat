@@ -1,7 +1,7 @@
 export const HomeRune = () => {
   return (
     <svg
-      className={"main-rune desktop z-10"}
+      className={"main-rune absolute inset-0 w-full h-full m-auto desktop z-10"}
       xmlns="http://www.w3.org/2000/svg"
       width="1600"
       height="720"

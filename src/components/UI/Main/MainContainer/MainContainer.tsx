@@ -9,7 +9,7 @@ export const MainContainer = () => {
 
     const { stage } = useContext(AppContext)
 
-    return <div className={'m-auto'}>
+    return <div className={'m-auto w-full h-full max-w-[1600px]'}>
         <HomeStage />
     </div>
 }
