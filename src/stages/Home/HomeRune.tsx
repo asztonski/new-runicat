@@ -1,7 +1,7 @@
 export const HomeRune = () => {
   return (
     <svg
-      className={"absolute inset-0 w-full h-full m-auto -z-10"}
+      className={"absolute inset-0 w-full h-full m-auto z-[1]"}
       xmlns="http://www.w3.org/2000/svg"
       width="1600"
       height="720"
