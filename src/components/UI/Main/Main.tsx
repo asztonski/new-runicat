@@ -1,4 +1,4 @@
-import { MainContainer } from "./MainContainer/MainContainer";
+import { MainContainer } from "@/components/Layout/Container/MainContainer";
 import { RuneLeft } from "./RuneLeft";
 import { RuneRight } from "./RuneRight";
 
