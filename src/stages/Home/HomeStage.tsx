@@ -1,6 +1,7 @@
 import { HomeRune } from "./HomeRune";
 import { ContentWrapper } from "@/components/Layout/Wrapper/ContentWrapper";
 import RunicText from '@/assets/runic-text-home.svg'
+import { Counter } from "@/components/UX/Light/Counter";
 
 export const HomeStage = () => {
   return (
@@ -26,8 +27,11 @@ export const HomeStage = () => {
           <div className={'mt-40'}>
             <img src={RunicText.src} alt="Runic Text" />
           </div>
-          <div>
-
+          <div className={"w-full flex justify-between mt-10"}>
+            <div className={"flex flex-col font-raleway uppercase"}>
+              <h1 className={"tracking-[30px] text-[58px] leading-[76px] w-min"}>Kosmiczna natura runy</h1>
+              <Counter />
+            </div>
           </div>
       </ContentWrapper>
     </div>

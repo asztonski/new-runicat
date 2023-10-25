@@ -14,6 +14,7 @@ const AppContextProvider: React.FC<{ children: ReactNode }> = ({
   children,
 }) => {
   const [stage, setStage] = useState<string>("home");
+  const [step, setStep] = useState<number>(1);
   const [mousePosition, setMousePosition] = useState<{ x: number; y: number }>({
     x: 0,
     y: 0,
@@ -36,6 +37,8 @@ const AppContextProvider: React.FC<{ children: ReactNode }> = ({
       value={{
         stage,
         setStage,
+        step,
+        setStep,
         mousePosition,
       }}
     >
