@@ -6,7 +6,7 @@ import { Light } from "@/components/UX/Light/Light";
 export default function Home() {
   return (
     <>
-      <div className={"p-10 h-full flex flex-col"}>
+      <div className={"p-3 md:p-10 h-full flex flex-col"}>
         <Header />
         <Main />
         <Footer />

@@ -11,7 +11,7 @@ export const Light = () => {
         transform: `translate(${mousePosition.x}px, ${mousePosition.y}px)`,
         transition: '.74s cubic-bezier(0,.8,.5,.92)'
       }}
-      className={"bg-primary w-[650px] h-[500px] absolute inset-0 blur-[100px]"}
+      className={"bg-primary w-[650px] h-[500px] absolute m-auto inset-0 blur-[100px]"}
     />
   );
 };

@@ -1,7 +1,7 @@
 export const RuneRight = () => {
   return (
     <svg
-      className={"Right-Rune absolute right-0 desktop"}
+      className={"absolute right-0 hidden md:block"}
       xmlns="http://www.w3.org/2000/svg"
       width="18"
       height="512"

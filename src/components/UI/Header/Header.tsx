@@ -5,10 +5,10 @@ import { InstagramIcon, FacebookIcon } from "./Socials";
 export const Header = () => {
   return (
     <header className={"flex justify-between raleway uppercase"}>
-      <div className={"flex gap-4 items-center"}>
+      <div className={"flex gap-3 md:gap-4 items-center"}>
         <Logo />
-        <h1 className={"tracking-[12px] text-[27px] flex items-center"}>
-          runicat<sup className={"text-grey text-[12px]"}>beta</sup>
+        <h1 className={"tracking-[8px] md:tracking-[12px] text-[19px] md:text-[27px] flex items-center"}>
+          runicat<sup className={"text-grey text-[11px] md:text-[12px]"}>beta</sup>
         </h1>
       </div>
       <div className={"flex gap-4"}>

@@ -41,6 +41,7 @@ html, body {
 body {
   background-color: var(--color-black);
   color: var(--color-white);
+  position: relative;
 }
 
 .raleway {
@@ -50,6 +51,8 @@ body {
 .roboto {
   font-family: var(--font-roboto);
 }
+
+
 
 @media (prefers-color-scheme: dark) {
   :root {

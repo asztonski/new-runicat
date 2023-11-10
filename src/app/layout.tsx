@@ -4,7 +4,7 @@ import { Roboto, Lato, Raleway } from "next/font/google";
 import localFont from 'next/font/local';
 import AppContextProvider from "@/context/AppContext";
 
-const roboto = Roboto({ subsets: ["latin"], weight: ["900"], variable: '--font-roboto' });
+const roboto = Roboto({ subsets: ["latin"], weight: ["300", "500", "900"], variable: '--font-roboto' });
 const lato = Lato({ subsets: ["latin"], weight: ["300", "700", "900"], variable: '--font-lato' });
 const raleway = Raleway({ subsets: ["latin"], weight: ["800"], variable: '--font-raleway' });
 
