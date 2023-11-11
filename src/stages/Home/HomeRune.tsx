@@ -1,9 +1,10 @@
-import { useContext } from 'react'
-import { AppContext } from '@/context/AppContext';
+type HomeRuneProps = {
+  isDesktop: boolean,
+}
 
-export const HomeRune = () => {
+export const HomeRune: React.FC<HomeRuneProps> = ({ isDesktop }) => {
 
-  const { isDesktop } = useContext(AppContext)
+  // console.log(isDesktop)
 
   return (
     <>

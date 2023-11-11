@@ -12,46 +12,39 @@ type HomeStageProps = {
 };
 
 export const HomeStage: React.FC<HomeStageProps> = ({ isDesktop }) => {
+
+  const copyMappingHandler = (section: string) => {
+    return isDesktop ? homeCopy[section].desktop : homeCopy[section].mobile;
+  }
+
   const HeadingWrapper = () => {
+    const selectedCopy = copyMappingHandler("top");
+
     return (
       <div
         className={
           "flex justify-between w-full uppercase raleway tracking-[8px] text-sm md:text-xl"
         }
       >
-        {!isDesktop ? (
-          <>
-            {homeCopy.top.mobile.map((heading, id) => (
-              <h3
-                className={`${id === 1 ? "text-right" : ""}`}
-                dangerouslySetInnerHTML={{ __html: heading }}
-                key={id}
-              />
-            ))}
-          </>
-        ) : (
-          <>
-            {homeCopy.top.desktop.map((heading, id) => (
-              <h3
-                className={`${id === 1 ? "text-right" : ""}`}
-                dangerouslySetInnerHTML={{ __html: heading }}
-                key={id}
-              />
-            ))}
-          </>
-        )}
+        {selectedCopy.map((heading: string, id: number) => (
+          <h3
+            className={`${id === 1 ? "text-right" : ""}`}
+            dangerouslySetInnerHTML={{ __html: heading }}
+            key={id}
+          />
+        ))}
       </div>
     );
   };
 
   const LeftWrapper = () => {
+    const selectedCopy = copyMappingHandler("bottom");
+
     return (
       <div className={"w-full flex"}>
         <div className={"flex flex-col font-raleway uppercase"}>
           <h1 className={"tracking-[30px] text-[58px] leading-[76px] w-min"}>
-            {!isDesktop
-              ? homeCopy.bottom.mobile[0]
-              : homeCopy.bottom.desktop[0]}
+            {selectedCopy[0]}
           </h1>
           <Counter />
         </div>
@@ -60,10 +53,12 @@ export const HomeStage: React.FC<HomeStageProps> = ({ isDesktop }) => {
   };
 
   const RightWrapper = () => {
+    const selectedCopy = copyMappingHandler("bottom");
+
     return (
       <div className={"flex flex-col gap-10 w-full max-w-[470px] self-center"}>
         <p className={"text-[16px] leading-[30px]"}>
-          {!isDesktop ? homeCopy.bottom.mobile[1] : homeCopy.bottom.desktop[1]}
+          {selectedCopy[1]}
         </p>
         <img
           className={"w-full max-w-[230px]"}
@@ -81,7 +76,7 @@ export const HomeStage: React.FC<HomeStageProps> = ({ isDesktop }) => {
         "relative h-full w-full inset-0 m-auto flex flex-col justify-center"
       }
     >
-      <HomeRune />
+      <HomeRune isDesktop={isDesktop} />
       <ContentWrapper>
         <HeadingWrapper />
         <div className={"mt-40"}>
