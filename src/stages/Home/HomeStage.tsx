@@ -29,7 +29,7 @@ export const HomeStage = () => {
         {/* DESKTOP */}
         <div
           className={
-            "hidden lg:flex justify-between w-full uppercase raleway tracking-[8px] text-xl after:absolute after:content-[''] after:w-full after:h-[20%] after:top-[5%] after:left-0 after:bg-black after:z-[-1]"
+            "hidden lg:flex justify-between w-full uppercase raleway tracking-[8px] text-xl after:absolute after:content-[''] after:w-full after:h-1/4 after:top-0 after:left-0 after:bg-black after:z-[-1]"
           }
         >
           {homeCopy.top.desktop.map((heading: string, id: number) => (
@@ -49,6 +49,7 @@ export const HomeStage = () => {
       <div className={"w-full flex"}>
         <div className={"flex flex-col font-raleway uppercase"}>
           <>
+            {/* MOBILE */}
             <h1
               className={
                 "lg:hidden tracking-[30px] text-[58px] leading-[76px] w-min"
@@ -56,9 +57,10 @@ export const HomeStage = () => {
             >
               {homeCopy.bottom.mobile[0]}
             </h1>
+            {/* DESKTOP */}
             <h1
               className={
-                "hidden lg:block tracking-[30px] text-6xl leading-snug w-min"
+                "hidden lg:block tracking-[30px] text-4xl 2xl:text-6xl leading-snug w-min"
               }
             >
               {homeCopy.bottom.desktop[0]}
@@ -99,14 +101,20 @@ export const HomeStage = () => {
       }
     >
       <HomeRune />
-      <Container>
+      <Container alignBetween>
         <HeadingWrapper />
-        <div className={"mt-40 relative w-full max-w-[172px] h-5"}>
-          <Image fill src={RunicText.src} alt="Runic Text" />
-        </div>
-        <div className={"flex flex-col lg:flex-row w-full mt-10 after:absolute after:content-[''] after:w-full after:h-1/4 after:bottom-0 after:left-0 after:bg-black after:z-[-1]"}>
-          <LeftWrapper />
-          <RightWrapper />
+        <div>
+          <div className={"relative w-full max-w-[172px] h-5"}>
+            <Image fill src={RunicText.src} alt="Runic Text" />
+          </div>
+          <div
+            className={
+              "flex flex-col lg:flex-row w-full mt-10 after:absolute after:content-[''] after:w-full after:h-1/4 after:bottom-0 after:left-0 after:bg-black after:z-[-1]"
+            }
+          >
+            <LeftWrapper />
+            <RightWrapper />
+          </div>
         </div>
       </Container>
     </div>
