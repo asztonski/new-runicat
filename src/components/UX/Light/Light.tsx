@@ -18,7 +18,7 @@ export const Light = () => {
     <div
       ref={lightRef}
       className={
-        "bg-primary w-[650px] h-[500px] duration-[0.4s] ease-[cubic-bezier(0,.8,.5,.92);] absolute m-auto md:m-[unset] inset-0 blur-[100px]"
+        "bg-primary w-[650px] h-[500px] duration-[0.4s] ease-[cubic-bezier(0,.8,.5,.92);] absolute m-auto lg:m-[unset] inset-0 blur-[100px]"
       }
     />
   );
