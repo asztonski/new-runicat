@@ -15,7 +15,7 @@ export const HomeStage = () => {
         {/* MOBILE */}
         <div
           className={
-            "flex lg:hidden justify-between w-full uppercase raleway tracking-[8px] text-sm"
+            "flex lg:hidden justify-between w-full uppercase raleway tracking-[8px] text-xs"
           }
         >
           {homeCopy.top.mobile.map((heading: string, id: number) => (
@@ -52,7 +52,7 @@ export const HomeStage = () => {
             {/* MOBILE */}
             <h1
               className={
-                "lg:hidden tracking-[30px] text-[58px] leading-[76px] w-min"
+                "lg:hidden tracking-[18px] text-3xl leading-10 w-min"
               }
             >
               {homeCopy.bottom.mobile[0]}
@@ -75,17 +75,19 @@ export const HomeStage = () => {
 
   const RightWrapper = () => {
     return (
-      <div className={"flex flex-col gap-10 w-full max-w-[470px] self-center"}>
+      <div className={"flex flex-col gap-10 w-full mt-4 lg:mt-0 max-w-[470px] self-center"}>
         <>
-          <p className={"lg:hidden text-[16px] leading-[30px]"}>
-            {homeCopy.bottom.mobile[1]}
-          </p>
-          <p className={"hidden lg:block text-[16px] leading-[30px]"}>
-            {homeCopy.bottom.desktop[1]}
-          </p>
+          <p
+            dangerouslySetInnerHTML={{ __html: homeCopy.bottom.mobile[1] }}
+            className={"lg:hidden text-[16px] leading-[30px]"}
+          />
+          <p
+            dangerouslySetInnerHTML={{ __html: homeCopy.bottom.desktop[1] }}
+            className={"hidden lg:block text-[16px] leading-[30px]"}
+          />
         </>
 
-        <div className={"w-full max-w-[230px] h-5 relative"}>
+        <div className={" w-32 lg:w-full max-w-[230px] lg:h-5 relative"}>
           <Image fill src={RunicText2.src} alt="Runic Text" />
         </div>
 
@@ -104,12 +106,12 @@ export const HomeStage = () => {
       <Container alignBetween>
         <HeadingWrapper />
         <div>
-          <div className={"relative w-full max-w-[172px] h-5"}>
+          <div className={"relative w-32 h-3 mt-28 lg:mt-0 lg:w-44 lg:h-5"}>
             <Image fill src={RunicText.src} alt="Runic Text" />
           </div>
           <div
             className={
-              "flex flex-col lg:flex-row w-full mt-10 after:absolute after:w-full after:h-1/4 after:bottom-0 after:left-0 lg:after:bg-black after:z-[-1]"
+              "flex flex-col lg:flex-row w-full mt-7 lg:mt-10 after:absolute after:w-full after:h-1/4 after:bottom-0 after:left-0 lg:after:bg-black after:z-[-1]"
             }
           >
             <LeftWrapper />

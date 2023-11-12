@@ -7,7 +7,7 @@ export const homeCopy = {
     ],
   },
   bottom: {
-    mobile: ["Natura runy", "Poznaj wskazówki które los chce ujawnić Tobie."],
+    mobile: ["Natura runy", "Poznaj wskazówki które los<br />chce ujawnić Tobie."],
     desktop: [
       "Kosmiczna natura runy",
       "W księżycową noc, gdy świat usypia w towarzystwie gwiazd; kosmos mówi do nas szeptem wiatru. Szum liści to słowa starych drzew. One widziały minione czasy. Odczytaj tajemnicze znaki run. Poznaj wskazówki, które los chce ujawnić Tobie.",

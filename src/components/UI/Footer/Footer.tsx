@@ -2,10 +2,10 @@ export const Footer = () => {
   return (
     <footer className={"flex justify-between uppercase raleway tracking-[6px] text-sm"}>
       <p>
-        <span className="desktop">copyrights </span>© 2023
+        <span className="hidden lg:inline">copyrights </span>© 2023
       </p>
       <svg
-        className={"cat absolute bottom-0 left-[31%] z-10"}
+        className={"cat hidden lg:block absolute bottom-0 left-[31%] z-10"}
         xmlns="http://www.w3.org/2000/svg"
         width="57.828"
         height="47.001"
