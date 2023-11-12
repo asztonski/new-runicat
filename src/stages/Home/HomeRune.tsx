@@ -1,16 +1,9 @@
-type HomeRuneProps = {
-  isDesktop: boolean,
-}
-
-export const HomeRune: React.FC<HomeRuneProps> = ({ isDesktop }) => {
-
-  // console.log(isDesktop)
+export const HomeRune = () => {
 
   return (
     <>
-      {isDesktop ? (
         <svg
-          className={"absolute inset-0 m-auto w-full h-full z-[1]"}
+          className={"absolute md:block hidden inset-0 m-auto w-full h-auto z-[1]"}
           xmlns="http://www.w3.org/2000/svg"
           width="1600"
           height="720.001"
@@ -21,17 +14,12 @@ export const HomeRune: React.FC<HomeRuneProps> = ({ isDesktop }) => {
             transform="translate(-160 -115)"
           />
         </svg>
-      ) : (
         <svg
-          className={"absolute inset-0 m-auto w-full h-full z-[1]"}
-          xmlns="http://www.w3.org/2000/svg"
-          width="350"
-          height="696"
+          className={"absolute md:hidden inset-0 m-auto w-full h-auto z-[1]"}
           viewBox="0 0 350 696"
         >
-          <path d="M0.006,0.192H349.994V695.808H0.006V0.192ZM260.215,231.627l-67.337,60.708V210.924h-34.76v81.411L90.781,231.627,67.4,257.314l90.72,81.793V481.932h34.76V339.1l90.528-81.83Zm0,4-69.337,61.708V212.924h-30.76v84.411L90.781,234.627,70.4,257.314l89.72,80.793V479.932h30.76V338.1l88.528-80.83Z" />
+          <path className="w-full" d="M0.006,0.192H349.994V695.808H0.006V0.192ZM260.215,231.627l-67.337,60.708V210.924h-34.76v81.411L90.781,231.627,67.4,257.314l90.72,81.793V481.932h34.76V339.1l90.528-81.83Zm0,4-69.337,61.708V212.924h-30.76v84.411L90.781,234.627,70.4,257.314l89.72,80.793V479.932h30.76V338.1l88.528-80.83Z" />
         </svg>
-      )}
     </>
   );
 };
