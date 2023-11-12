@@ -1,16 +1,25 @@
 "use client";
-import React, { useRef, useEffect } from "react";
+import React, { useRef, useEffect, useState } from "react";
 import { useMousePosition } from "@/utils/useMousePosition";
 
 export const Light = () => {
   const { mouseX, mouseY } = useMousePosition();
+  const [isDesktop, setIsDesktop] = useState(false);
   const lightRef = useRef(null);
 
   useEffect(() => {
-    if (lightRef.current) {
-      lightRef.current.style.transform = `translate(${mouseX / 10}%, ${
-        mouseY / 10
-      }%)`;
+    window.innerWidth > 1024 ? setIsDesktop(true) : setIsDesktop(false);
+  }, []);
+
+  useEffect(() => {
+    if (isDesktop) {
+      if (lightRef.current) {
+        lightRef.current.style.transform = `translate(${mouseX / 10}%, ${
+          mouseY / 10
+        }%)`;
+      } else {
+        lightRef.current.style.transform = `translate(0)`
+      }
     }
   }, [mouseX, mouseY]);
 
