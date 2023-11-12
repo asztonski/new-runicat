@@ -29,7 +29,7 @@ export const HomeStage = () => {
         {/* DESKTOP */}
         <div
           className={
-            "hidden lg:flex justify-between w-full uppercase raleway tracking-[8px] text-xl"
+            "hidden lg:flex justify-between w-full uppercase raleway tracking-[8px] text-xl after:absolute after:content-[''] after:w-full after:h-[20%] after:top-[5%] after:left-0 after:bg-black after:z-[-1]"
           }
         >
           {homeCopy.top.desktop.map((heading: string, id: number) => (
@@ -104,7 +104,7 @@ export const HomeStage = () => {
         <div className={"mt-40 relative w-full max-w-[172px] h-5"}>
           <Image fill src={RunicText.src} alt="Runic Text" />
         </div>
-        <div className={"flex flex-col lg:flex-row w-full mt-10 relative after:absolute after:content-[''] after:w-full after:h-1/6 after:bottom-0 after:left-0 after:bg-black"}>
+        <div className={"flex flex-col lg:flex-row w-full mt-10 after:absolute after:content-[''] after:w-full after:h-1/4 after:bottom-0 after:left-0 after:bg-black after:z-[-1]"}>
           <LeftWrapper />
           <RightWrapper />
         </div>
