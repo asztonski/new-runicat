@@ -1,6 +1,6 @@
 export const Footer = () => {
   return (
-    <footer className={"flex justify-between uppercase raleway tracking-[6px] text-sm"}>
+    <footer className={"flex justify-between uppercase raleway tracking-[6px] text-sm mt-4"}>
       <p>
         <span className="hidden lg:inline">copyrights </span>© 2023
       </p>

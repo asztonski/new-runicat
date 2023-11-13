@@ -29,7 +29,7 @@ export const HomeStage = () => {
         {/* DESKTOP */}
         <div
           className={
-            "hidden lg:flex justify-between w-full uppercase raleway tracking-[8px] text-xl after:absolute after:w-full after:h-1/4 after:top-0 after:left-0 after:bg-black after:z-[-1]"
+            "hidden lg:flex justify-between w-full uppercase raleway tracking-[8px] text-xl !leading-relaxed after:absolute after:w-full after:h-1/4 after:top-0 after:left-0 after:bg-black after:z-[-1]"
           }
         >
           {homeCopy.top.desktop.map((heading: string, id: number) => (
@@ -60,7 +60,7 @@ export const HomeStage = () => {
             {/* DESKTOP */}
             <h1
               className={
-                "hidden lg:block tracking-[30px] text-4xl 2xl:text-6xl leading-snug w-min"
+                "hidden lg:block tracking-[30px] text-4xl 2xl:text-6xl !leading-snug w-min"
               }
             >
               {homeCopy.bottom.desktop[0]}

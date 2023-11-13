@@ -4,7 +4,7 @@ import { InstagramIcon, FacebookIcon } from "./Socials";
 
 export const Header = () => {
   return (
-    <header className={"flex justify-between raleway uppercase"}>
+    <header className={"flex justify-between raleway uppercase mb-4"}>
       <div className={"flex gap-3 lg:gap-4 items-center"}>
         <Logo />
         <h1 className={"tracking-[8px] lg:tracking-[12px] text-[19px] lg:text-[27px] flex items-center"}>

@@ -39,7 +39,8 @@ html, body {
 }
 
 body {
-  background-color: var(--color-black);
+  /* background-color: var(--color-black); */
+  background-color: grey;
   color: var(--color-white);
   position: relative;
 }
