@@ -11,36 +11,19 @@ import Image from "next/image";
 export const HomeStage = () => {
   const HeadingWrapper = () => {
     return (
-      <>
-        {/* MOBILE */}
-        <div
-          className={
-            "flex lg:hidden justify-between w-full uppercase raleway tracking-[8px] text-xs"
-          }
-        >
-          {homeCopy.top.mobile.map((heading: string, id: number) => (
-            <h3
-              className={`${id === 1 ? "text-right" : ""}`}
-              dangerouslySetInnerHTML={{ __html: heading }}
-              key={id}
-            />
-          ))}
-        </div>
-        {/* DESKTOP */}
-        <div
-          className={
-            "hidden lg:flex justify-between w-full uppercase raleway tracking-[8px] text-xl !leading-relaxed after:absolute after:w-full after:h-1/4 after:top-0 after:left-0 after:bg-black after:z-[-1]"
-          }
-        >
-          {homeCopy.top.desktop.map((heading: string, id: number) => (
-            <h3
-              className={`${id === 1 ? "text-right" : ""}`}
-              dangerouslySetInnerHTML={{ __html: heading }}
-              key={id}
-            />
-          ))}
-        </div>
-      </>
+      <div
+        className={
+          "flex justify-between w-full uppercase raleway tracking-[8px] text-xl !leading-relaxed after:absolute after:w-full after:h-1/4 2xl:after:h-0 after:top-0 after:left-0 after:bg-black after:z-[-1]"
+        }
+      >
+        {homeCopy.top.map((heading: string, id: number) => (
+          <h3
+            className={`${id === 1 ? "text-right" : ""}`}
+            dangerouslySetInnerHTML={{ __html: heading }}
+            key={id}
+          />
+        ))}
+      </div>
     );
   };
 
@@ -48,24 +31,11 @@ export const HomeStage = () => {
     return (
       <div className={"w-full flex"}>
         <div className={"flex flex-col font-raleway uppercase"}>
-          <>
-            {/* MOBILE */}
-            <h1
-              className={
-                "lg:hidden tracking-[18px] text-3xl leading-10 w-min"
-              }
-            >
-              {homeCopy.bottom.mobile[0]}
-            </h1>
-            {/* DESKTOP */}
-            <h1
-              className={
-                "hidden lg:block tracking-[30px] text-4xl 2xl:text-6xl !leading-snug w-min"
-              }
-            >
-              {homeCopy.bottom.desktop[0]}
-            </h1>
-          </>
+          <h1 dangerouslySetInnerHTML={{__html: homeCopy.bottom[0]}}
+            className={
+              "tracking-[30px] text-4xl 2xl:text-6xl !leading-snug w-min"
+            }
+          />
 
           <Counter />
         </div>
@@ -75,23 +45,21 @@ export const HomeStage = () => {
 
   const RightWrapper = () => {
     return (
-      <div className={"flex flex-col gap-10 w-full mt-4 lg:mt-0 max-w-[470px] self-center"}>
-        <>
+      <div
+        className={
+          "flex flex-col gap-10 w-full mt-4 lg:mt-0 max-w-[470px] self-center"
+        }
+      >
           <p
-            dangerouslySetInnerHTML={{ __html: homeCopy.bottom.mobile[1] }}
-            className={"lg:hidden text-[16px] leading-[30px]"}
+            dangerouslySetInnerHTML={{ __html: homeCopy.bottom[1] }}
+            className={"text-[16px] leading-[30px]"}
           />
-          <p
-            dangerouslySetInnerHTML={{ __html: homeCopy.bottom.desktop[1] }}
-            className={"hidden lg:block text-[16px] leading-[30px]"}
-          />
-        </>
 
-        <div className={" w-32 lg:w-full max-w-[230px] lg:h-5 relative"}>
+        <div className={"w-32 lg:w-full max-w-[230px] lg:h-5 relative"}>
           <Image fill src={RunicText2.src} alt="Runic Text" />
         </div>
 
-        <Button>{homeCopy.buttons[0]}</Button>
+        <Button>{homeCopy.button}</Button>
       </div>
     );
   };
@@ -111,7 +79,7 @@ export const HomeStage = () => {
           </div>
           <div
             className={
-              "flex flex-col lg:flex-row w-full mt-7 lg:mt-10 after:absolute after:w-full after:h-1/4 after:bottom-0 after:left-0 lg:after:bg-black after:z-[-1]"
+              "flex flex-col lg:flex-row w-full mt-7 lg:mt-10 after:absolute after:w-full after:h-1/4 2xl:after:h-0 after:bottom-0 after:left-0 lg:after:bg-black after:z-[-1]"
             }
           >
             <LeftWrapper />
