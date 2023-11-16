@@ -1,0 +1,16 @@
+{
+  "home": {
+    "title": {
+      "mobile": "Runa dnia",
+      "desktop": "Runy każdego dnia"
+    },
+    "subtitle": {
+      "mobile": "Kosmiczna natura runy",
+      "desktop": "W księżycową noc, gdy świat usypia w towarzystwie gwiazd; kosmos mówi do nas szeptem wiatru. Szum liści to słowa starych drzew. One widziały minione czasy. Odczytaj tajemnicze znaki run. Poznaj wskazówki, które los chce ujawnić Tobie."
+    },
+    "button": {
+      "mobile": "Sprawdź runę dnia",
+      "desktop": "Sprawdź swoją runę dnia"
+    }
+  }
+}

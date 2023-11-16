@@ -1,0 +1,16 @@
+  {
+  "home": {
+    "title": {
+      "mobile": "Runes for everyday",
+      "desktop": "Rune of the day"
+    },
+    "subtitle": {
+      "mobile": "Cosmic nature of runes",
+      "desktop": "On a moonlit night, when the world falls asleep in the company of stars; the cosmos speaks to us in the whisper of the wind. The rustle of leaves is the words of ancient trees. They have seen past times. Decode the mysterious runic signs. Discover the clues that fate wants to reveal to you."
+    },
+    "button": {
+      "mobile": "Check rune of the day",
+      "desktop": "Check your rune of the day"
+    }
+  }
+}
