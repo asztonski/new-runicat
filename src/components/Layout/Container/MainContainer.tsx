@@ -1,7 +1,7 @@
 "use client";
-import { HomeStage } from "@/stages/Home/HomeStage";
-import { SetupStage } from "@/stages/Setup/SetupStage";
-import { ResultStage } from "@/stages/Result/ResultStage";
+import { HomeStage } from "@/app/[locale]/Stages/Home/HomeStage";
+import { SetupStage } from "@/app/[locale]/Stages/Setup/SetupStage";
+import { ResultStage } from "@/app/[locale]/Stages/Result/ResultStage";
 import { useContext } from "react";
 import { AppContext } from "@/context/AppContext";
 

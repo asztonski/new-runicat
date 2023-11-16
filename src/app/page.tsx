@@ -1,6 +1,6 @@
-import { Header } from "@/components/UI/Header/Header";
-import { Main } from "@/components/UI/Main/Main";
-import { Footer } from "@/components/UI/Footer/Footer";
+import { Header } from "./[locale]/Header/Header";
+import { Main } from "@/components/Layout/Main/Main";
+import { Footer } from "./[locale]/Footer/Footer";
 import { Light } from "@/components/UX/Light/Light";
 
 export default function Home() {

@@ -1,7 +1,7 @@
 'use client'
 import { MainContainer } from "@/components/Layout/Container/MainContainer";
-import { RuneLeft } from "./RuneLeft";
-import { RuneRight } from "./RuneRight";
+import { RuneLeft } from "@/components/UI/Rune/RuneLeft";
+import { RuneRight } from "@/components/UI/Rune/RuneRight";
 
 export const Main = () => {
 
