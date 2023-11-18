@@ -1,16 +1,23 @@
-  {
-  "home": {
+{
+  "Home": {
     "title": {
-      "mobile": "Runes for everyday",
-      "desktop": "Rune of the day"
+      "first": {
+        "mobile": "Today's rune",
+        "desktop": "Runes every day"
+      },
+      "second": {
+        "mobile": "Check rune",
+        "desktop": "Check<br />rune for<br />today"
+      }
     },
     "subtitle": {
-      "mobile": "Cosmic nature of runes",
+      "mobile": "Nature of runes",
+      "desktop": "Cosmic<br/>nature<br />of runes"
+    },
+    "desc": {
+      "mobile": "Discover the clues that fate<br />wants to reveal to you.",
       "desktop": "On a moonlit night, when the world falls asleep in the company of stars; the cosmos speaks to us in the whisper of the wind. The rustle of leaves is the words of ancient trees. They have seen past times. Decode the mysterious runic signs. Discover the clues that fate wants to reveal to you."
     },
-    "button": {
-      "mobile": "Check rune of the day",
-      "desktop": "Check your rune of the day"
-    }
+    "button": "Check your rune of the day"
   }
 }

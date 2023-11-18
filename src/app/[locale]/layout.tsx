@@ -1,4 +1,5 @@
-import "./globals.css";
+import { notFound } from 'next/navigation';
+import "../../app/globals.css";
 import type { Metadata } from "next";
 import { Roboto, Lato, Raleway } from "next/font/google";
 import localFont from 'next/font/local';
@@ -11,7 +12,7 @@ const raleway = Raleway({ subsets: ["latin"], weight: ["800"], variable: '--font
 const runic = localFont({
   src: [
     {
-      path: '../../public/fonts/runic/futha.ttf',
+      path: '../../../public/fonts/runic/futha.ttf',
       weight: '500',
       style: 'normal'
     },
@@ -30,14 +31,13 @@ export const metadata: Metadata = {
     "[BETA] Runicat is a react web app created for people who want to understand the present and the future through runes. Type your birthdate and let universe works for you!",
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+const locales = ['en', 'pl'];
 
+export default function LocaleLayout({children, params: {locale}}) {
+  if (!locales.includes(locale as any)) notFound();
+ 
   return (
-    <html lang="en">
+    <html lang={locale}>
       <AppContextProvider>
         <body className={`${roboto.variable} ${lato.variable} ${raleway.variable} ${runic.variable}`}>{children}</body>
       </AppContextProvider>
