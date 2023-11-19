@@ -19,5 +19,22 @@
       "desktop": "W księżycową noc, gdy świat usypia w towarzystwie gwiazd; kosmos mówi do nas szeptem wiatru. Szum liści to słowa starych drzew. One widziały minione czasy. Odczytaj tajemnicze znaki run. Poznaj wskazówki, które los chce ujawnić Tobie."
     },
     "button": "Sprawdź swoją runę dnia"
-  }
+  },
+  "Setup": {
+    "title": "Wylosuj runę dnia",
+    "desc": {
+      "mobile": "Wylosowana runa pozwala skupić się na tym co istotne w danym momencie.<br>Runa dnia to swego rodzaju wyrocznia losu. To wskazówka, która ułatwia poukładać bieżące sprawy. Wykorzystaj potęgę run.",
+      "desktop": "Wylosowana runa pozwala skupić się na tym co istotne w danym momencie. Słowo klucz to harmonia. Runa dnia to swego rodzaju wyrocznia losu. Dla każdego oznacza co innego. To wskazówka, która ułatwia poukładać bieżące sprawy. Wykorzystaj potęgę run. Pamiętaj, że każda Twoja myśl i słowo mają znaczenie. Pozwól by prowadziła Cię najwyższa energia Wszechświata."
+    },
+    "modal": {
+      "title": "Określ datę urodzenia",
+      "desc": {
+        "mobile": "Algorytm losowania Runy Dnia dostosuje się dla Twojej numerologicznej drogi życia. Informacje nie są zapisywane.",
+        "desktop": "Na tej podstawie algorytm losowania Runy Dnia dostosuje się do Twojej numerologicznej drogi życia. Żadne informacje nie są zapisane na stałe. Możesz pominąć ten krok. Wybrana data jest jedynie formą personalizacji."
+      },
+      "button_1": "Pomiń",
+      "button_2": "Personalizuj"
+    }
+  },
+  "Result": {}
 }

@@ -19,5 +19,22 @@
       "desktop": "On a moonlit night, when the world falls asleep in the company of stars; the cosmos speaks to us in the whisper of the wind. The rustle of leaves is the words of ancient trees. They have seen past times. Decode the mysterious runic signs. Discover the clues that fate wants to reveal to you."
     },
     "button": "Check your rune of the day"
-  }
+  },
+  "Setup": {
+    "title": "Draw the rune of the day",
+    "desc": {
+      "mobile": "The drawn rune allows you to focus on what is important at a given moment. The key word is harmony. The rune of the day is a kind of oracle of fate. It means something different to everyone. This is a tip that helps you sort out current matters. Use the power of runes.",
+      "desktop": "The drawn rune allows you to focus on what is important at a given moment. The key word is harmony. The rune of the day is a kind of oracle of fate. It means something different to everyone. This is a tip that helps you sort out current matters. Use the power of runes.<br /><br />Remember that your every thought and word matters. Let the highest energy of the Universe guide you."
+    },
+    "modal": {
+      "title": "Enter your date of birth",
+      "desc": {
+        "mobile": "The Rune of the Day drawing algorithm will adapt to your numerological life path. Information is not saved.",
+        "desktop": "Based on this, the Rune of the Day drawing algorithm will adapt to your numerological life path. No information is permanent. You can solve this problem. The selected data is only a form of personalization."
+      },
+      "button_1": "Skip",
+      "button_2": "Personalize"
+    }
+  },
+  "Result": {}
 }
